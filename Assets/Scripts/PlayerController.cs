@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -81,6 +82,14 @@ public class PlayerController : MonoBehaviour
             gm.score++;
             soundEffects.PlayOneShot(sounds[1], .7f);
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag.Equals("Finish"))
+        {
+            Debug.Log("Game Ended");
+            Destroy(this.gameObject);
+            SceneManager.LoadScene(2);
+            //End the Game
         }
     }
 
