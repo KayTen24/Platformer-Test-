@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Coin
+  - Cake
+  - Cookie
+  - Donut
   layers:
   - Default
   - TransparentFX

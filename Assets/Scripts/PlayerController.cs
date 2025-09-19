@@ -77,10 +77,24 @@ public class PlayerController : MonoBehaviour
             isGrounded= true;
         }
 
-        if (collision.gameObject.tag.Equals("Coin"))
+        if (collision.gameObject.tag.Equals("Cake"))
         {
-            gm.score++;
-            soundEffects.PlayOneShot(sounds[1], .7f);
+            gm.score+=3;
+            soundEffects.PlayOneShot(sounds[2], .7f);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag.Equals("Donut"))
+        {
+            gm.score += 2;
+            soundEffects.PlayOneShot(sounds[2], .7f);
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag.Equals("Cookie"))
+        {
+            gm.score ++;
+            soundEffects.PlayOneShot(sounds[2], .7f);
             Destroy(collision.gameObject);
         }
 

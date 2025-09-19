@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public int score;
     public TMP_Text scoreText;
-    public float Timer = 3;
+    public TMP_Text timerText;
+    public float Timer = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Timer -= Time.deltaTime;
+        timerText.text = "Time" + Mathf.Floor(Timer);
         if (Timer <= 0)
         {
             Debug.Log("Game Ended");
