@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 529683959301080515}
   - component: {fileID: 3296846822260722590}
   - component: {fileID: -1413550318594478096}
+  - component: {fileID: 5152620181117467588}
   m_Layer: 0
   m_Name: Cake_Sprite
   m_TagString: Cake
@@ -120,3 +121,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.6666667
+--- !u!114 &5152620181117467588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3347807310488309244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35522124ecb2e7e4887d3a7a613f1586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
